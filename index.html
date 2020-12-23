@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r123/three.js"
+      integrity="sha512-8Yom5spEjD3HeZTNoDiOm4Y4Rn3RVKUFpiqTM4I3RIIO0u8e2m7XjT5rG1GQNHJlVcD9EZrzn+itENl4C6112A=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.js"
+      integrity="sha512-u+vtyZDzyd0zgAEffKfoNx2BnCahAOBBYvzGu6vma1B18zQ6lEGF3F6dAFvqaxDoIU/GZRxcXV5oq23OIrkQwg=="
+      crossorigin="anonymous"
+    ></script>
+    <title>Scrolling Images With WebGL and Three.js</title>
+    <meta
+      name="youtube"
+      content="https://www.youtube.com/watch?v=ivg603bYDk8&ab_channel=YuriArtyukh"
+    />
+    <style>
+      body {
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+      }
+      .n {
+        position: absolute;
+        top: 100px;
+        height: 10px;
+        width: 200px;
+        background: #000;
+      }
+      .n1 {
+        top: 200px;
+      }
+      .n2 {
+        top: 300px;
+      }
+      .n3 {
+        top: 400px;
+      }
+      .n4 {
+        top: 500px;
+      }
+      #block {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background: #f00;
+        z-index: 100;
+      }
+      #container {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        pointer-events: none;
+      }
+      ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 100;
+        border: 1px solid #000;
+        width: 200px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      li {
+        font-size: 50px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="nav">
+      <li data-nav="0">111</li>
+      <li data-nav="1">22</li>
+      <li data-nav="2">3333</li>
+      <li data-nav="3">444</li>
+      <li data-nav="4">5555</li>
+    </ul>
+    <div id="wrap">
+      <div class="n">
+        <img src="img/0.jpg" width="60" alt="" />
+      </div>
+      <div class="n n1"><img src="img/1.jpg" width="60" alt="" /></div>
+      <div class="n n2"><img src="img/2.jpg" width="60" alt="" /></div>
+      <div class="n n3"><img src="img/3.jpg" width="60" alt="" /></div>
+      <div class="n n4"><img src="img/4.jpg" width="60" alt="" /></div>
+    </div>
+    <div id="block"></div>
+    <div id="container"></div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "threejs-webgl-scrolling-images",
+  "description": "This is the source code of this wonderful live tutorial: https://www.youtube.com/watch?v=ivg603bYDk8&ab_channel=YuriArtyukh",
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": {
+    "name": "Yuri Artyukh",
+    "url": "https://www.youtube.com/watch?v=ivg603bYDk8&ab_channel=YuriArtyukh"
+  },
+  "contributors": [
+    {
+      "name": "Giovanne Afonso",
+      "email": "giovanneafonso@gmail.com",
+      "url": "https://github.com/shakegioh"
+    }
+  ],
+  "dependencies": {
+    "dat.gui": "^0.7.7",
+    "gsap": "^3.5.1",
+    "three-orbit-controls": "^82.1.0"
+  },
+  "devDependencies": {
+    "glslify-bundle": "^5.1.1",
+    "glslify-deps": "^1.3.2"
+  }
+}
