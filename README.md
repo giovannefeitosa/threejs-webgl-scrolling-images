@@ -26,8 +26,21 @@ Please install parcel to run this project.
 npm i -g parcel
 ```
 
-1. Clone this repository
-2. `yarn start`
+Then clone and start the project:
+
+```
+git clone https://github.com/shakegioh/threejs-webgl-scrolling-images.git
+
+cd threejs-webgl-scrolling-images
+
+yarn install
+
+yarn start
+```
+
+Now you can see the working demo at:
+
+http://localhost:1234
 
 ## Contributing
 
